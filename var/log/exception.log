@@ -1,0 +1,277 @@
+2016-05-05T16:11:53+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'Invalid block type: Mage_CatalogSearch_Block_Navigation' in D:\Mage\htdocs\magento\alo_raymond\app\Mage.php:595
+Stack trace:
+#0 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Model\Layout.php(495): Mage::throwException('Invalid block t...')
+#1 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Model\Layout.php(437): Mage_Core_Model_Layout->_getBlockInstance('catalogsearch/n...', Array)
+#2 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Model\Layout.php(472): Mage_Core_Model_Layout->createBlock('catalogsearch/n...', 'catalogsearch.l...')
+#3 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Model\Layout.php(239): Mage_Core_Model_Layout->addBlock('catalogsearch/n...', 'catalogsearch.l...')
+#4 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Model\Layout.php(205): Mage_Core_Model_Layout->_generateBlock(Object(Mage_Core_Model_Layout_Element), Object(Mage_Core_Model_Layout_Element))
+#5 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Model\Layout.php(210): Mage_Core_Model_Layout->generateBlocks(Object(Mage_Core_Model_Layout_Element))
+#6 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Controller\Varien\Action.php(344): Mage_Core_Model_Layout->generateBlocks()
+#7 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Controller\Varien\Action.php(269): Mage_Core_Controller_Varien_Action->generateLayoutBlocks()
+#8 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\CatalogSearch\controllers\ResultController.php(77): Mage_Core_Controller_Varien_Action->loadLayout()
+#9 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Controller\Varien\Action.php(418): Mage_CatalogSearch_ResultController->indexAction()
+#10 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Controller\Varien\Router\Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('index')
+#11 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Controller\Varien\Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#12 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Model\App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#13 D:\Mage\htdocs\magento\alo_raymond\app\Mage.php(684): Mage_Core_Model_App->run(Array)
+#14 D:\Mage\htdocs\magento\alo_raymond\index.php(83): Mage::run('', 'store')
+#15 {main}
+2016-05-17T12:59:57+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'Invalid block type: Magiccart_Blog_Block_Toolbar_Toolbar' in D:\Mage\htdocs\magento\alo_raymond\app\Mage.php:595
+Stack trace:
+#0 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Model\Layout.php(495): Mage::throwException('Invalid block t...')
+#1 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Model\Layout.php(437): Mage_Core_Model_Layout->_getBlockInstance('blog/toolbar_to...', Array)
+#2 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Model\Layout.php(472): Mage_Core_Model_Layout->createBlock('blog/toolbar_to...', 'blog_list_toolb...')
+#3 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Model\Layout.php(239): Mage_Core_Model_Layout->addBlock('blog/toolbar_to...', 'blog_list_toolb...')
+#4 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Model\Layout.php(205): Mage_Core_Model_Layout->_generateBlock(Object(Mage_Core_Model_Layout_Element), Object(Mage_Core_Model_Layout_Element))
+#5 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Model\Layout.php(206): Mage_Core_Model_Layout->generateBlocks(Object(Mage_Core_Model_Layout_Element))
+#6 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Model\Layout.php(210): Mage_Core_Model_Layout->generateBlocks(Object(Mage_Core_Model_Layout_Element))
+#7 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Controller\Varien\Action.php(344): Mage_Core_Model_Layout->generateBlocks()
+#8 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Controller\Varien\Action.php(269): Mage_Core_Controller_Varien_Action->generateLayoutBlocks()
+#9 D:\Mage\htdocs\magento\alo_raymond\app\code\local\Magiccart\Blog\controllers\IndexController.php(21): Mage_Core_Controller_Varien_Action->loadLayout()
+#10 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Controller\Varien\Action.php(418): Magiccart_Blog_IndexController->listAction()
+#11 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Controller\Varien\Router\Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('list')
+#12 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Controller\Varien\Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#13 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Model\App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#14 D:\Mage\htdocs\magento\alo_raymond\app\Mage.php(684): Mage_Core_Model_App->run(Array)
+#15 D:\Mage\htdocs\magento\alo_raymond\index.php(83): Mage::run('', 'store')
+#16 {main}
+2016-05-17T12:59:57+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'Invalid block type: Magiccart_Blog_Block_Html_Pager' in D:\Mage\htdocs\magento\alo_raymond\app\Mage.php:595
+Stack trace:
+#0 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Model\Layout.php(495): Mage::throwException('Invalid block t...')
+#1 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Model\Layout.php(437): Mage_Core_Model_Layout->_getBlockInstance('blog/html_pager', Array)
+#2 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Model\Layout.php(472): Mage_Core_Model_Layout->createBlock('blog/html_pager', 'product_list_to...')
+#3 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Model\Layout.php(239): Mage_Core_Model_Layout->addBlock('blog/html_pager', 'product_list_to...')
+#4 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Model\Layout.php(205): Mage_Core_Model_Layout->_generateBlock(Object(Mage_Core_Model_Layout_Element), Object(Mage_Core_Model_Layout_Element))
+#5 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Model\Layout.php(206): Mage_Core_Model_Layout->generateBlocks(Object(Mage_Core_Model_Layout_Element))
+#6 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Model\Layout.php(206): Mage_Core_Model_Layout->generateBlocks(Object(Mage_Core_Model_Layout_Element))
+#7 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Model\Layout.php(210): Mage_Core_Model_Layout->generateBlocks(Object(Mage_Core_Model_Layout_Element))
+#8 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Controller\Varien\Action.php(344): Mage_Core_Model_Layout->generateBlocks()
+#9 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Controller\Varien\Action.php(269): Mage_Core_Controller_Varien_Action->generateLayoutBlocks()
+#10 D:\Mage\htdocs\magento\alo_raymond\app\code\local\Magiccart\Blog\controllers\IndexController.php(21): Mage_Core_Controller_Varien_Action->loadLayout()
+#11 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Controller\Varien\Action.php(418): Magiccart_Blog_IndexController->listAction()
+#12 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Controller\Varien\Router\Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('list')
+#13 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Controller\Varien\Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#14 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Model\App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#15 D:\Mage\htdocs\magento\alo_raymond\app\Mage.php(684): Mage_Core_Model_App->run(Array)
+#16 D:\Mage\htdocs\magento\alo_raymond\index.php(83): Mage::run('', 'store')
+#17 {main}
+2016-05-17T13:04:26+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'Invalid block type: Magiccart_Blog_Block_Toolbar_Toolbar' in D:\Mage\htdocs\magento\alo_raymond\app\Mage.php:595
+Stack trace:
+#0 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Model\Layout.php(495): Mage::throwException('Invalid block t...')
+#1 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Model\Layout.php(437): Mage_Core_Model_Layout->_getBlockInstance('blog/toolbar_to...', Array)
+#2 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Model\Layout.php(472): Mage_Core_Model_Layout->createBlock('blog/toolbar_to...', 'blog_list_toolb...')
+#3 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Model\Layout.php(239): Mage_Core_Model_Layout->addBlock('blog/toolbar_to...', 'blog_list_toolb...')
+#4 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Model\Layout.php(205): Mage_Core_Model_Layout->_generateBlock(Object(Mage_Core_Model_Layout_Element), Object(Mage_Core_Model_Layout_Element))
+#5 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Model\Layout.php(206): Mage_Core_Model_Layout->generateBlocks(Object(Mage_Core_Model_Layout_Element))
+#6 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Model\Layout.php(210): Mage_Core_Model_Layout->generateBlocks(Object(Mage_Core_Model_Layout_Element))
+#7 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Controller\Varien\Action.php(344): Mage_Core_Model_Layout->generateBlocks()
+#8 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Controller\Varien\Action.php(269): Mage_Core_Controller_Varien_Action->generateLayoutBlocks()
+#9 D:\Mage\htdocs\magento\alo_raymond\app\code\local\Magiccart\Blog\controllers\IndexController.php(21): Mage_Core_Controller_Varien_Action->loadLayout()
+#10 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Controller\Varien\Action.php(418): Magiccart_Blog_IndexController->listAction()
+#11 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Controller\Varien\Router\Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('list')
+#12 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Controller\Varien\Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#13 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Model\App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#14 D:\Mage\htdocs\magento\alo_raymond\app\Mage.php(684): Mage_Core_Model_App->run(Array)
+#15 D:\Mage\htdocs\magento\alo_raymond\index.php(83): Mage::run('', 'store')
+#16 {main}
+2016-05-17T13:04:26+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'Invalid block type: Magiccart_Blog_Block_Html_Pager' in D:\Mage\htdocs\magento\alo_raymond\app\Mage.php:595
+Stack trace:
+#0 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Model\Layout.php(495): Mage::throwException('Invalid block t...')
+#1 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Model\Layout.php(437): Mage_Core_Model_Layout->_getBlockInstance('blog/html_pager', Array)
+#2 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Model\Layout.php(472): Mage_Core_Model_Layout->createBlock('blog/html_pager', 'product_list_to...')
+#3 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Model\Layout.php(239): Mage_Core_Model_Layout->addBlock('blog/html_pager', 'product_list_to...')
+#4 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Model\Layout.php(205): Mage_Core_Model_Layout->_generateBlock(Object(Mage_Core_Model_Layout_Element), Object(Mage_Core_Model_Layout_Element))
+#5 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Model\Layout.php(206): Mage_Core_Model_Layout->generateBlocks(Object(Mage_Core_Model_Layout_Element))
+#6 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Model\Layout.php(206): Mage_Core_Model_Layout->generateBlocks(Object(Mage_Core_Model_Layout_Element))
+#7 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Model\Layout.php(210): Mage_Core_Model_Layout->generateBlocks(Object(Mage_Core_Model_Layout_Element))
+#8 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Controller\Varien\Action.php(344): Mage_Core_Model_Layout->generateBlocks()
+#9 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Controller\Varien\Action.php(269): Mage_Core_Controller_Varien_Action->generateLayoutBlocks()
+#10 D:\Mage\htdocs\magento\alo_raymond\app\code\local\Magiccart\Blog\controllers\IndexController.php(21): Mage_Core_Controller_Varien_Action->loadLayout()
+#11 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Controller\Varien\Action.php(418): Magiccart_Blog_IndexController->listAction()
+#12 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Controller\Varien\Router\Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('list')
+#13 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Controller\Varien\Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#14 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Model\App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#15 D:\Mage\htdocs\magento\alo_raymond\app\Mage.php(684): Mage_Core_Model_App->run(Array)
+#16 D:\Mage\htdocs\magento\alo_raymond\index.php(83): Mage::run('', 'store')
+#17 {main}
+2016-05-17T13:05:34+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'Invalid block type: Magiccart_Blog_Block_Toolbar_Toolbar' in D:\Mage\htdocs\magento\alo_raymond\app\Mage.php:595
+Stack trace:
+#0 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Model\Layout.php(495): Mage::throwException('Invalid block t...')
+#1 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Model\Layout.php(437): Mage_Core_Model_Layout->_getBlockInstance('blog/toolbar_to...', Array)
+#2 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Model\Layout.php(472): Mage_Core_Model_Layout->createBlock('blog/toolbar_to...', 'blog_list_toolb...')
+#3 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Model\Layout.php(239): Mage_Core_Model_Layout->addBlock('blog/toolbar_to...', 'blog_list_toolb...')
+#4 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Model\Layout.php(205): Mage_Core_Model_Layout->_generateBlock(Object(Mage_Core_Model_Layout_Element), Object(Mage_Core_Model_Layout_Element))
+#5 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Model\Layout.php(206): Mage_Core_Model_Layout->generateBlocks(Object(Mage_Core_Model_Layout_Element))
+#6 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Model\Layout.php(210): Mage_Core_Model_Layout->generateBlocks(Object(Mage_Core_Model_Layout_Element))
+#7 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Controller\Varien\Action.php(344): Mage_Core_Model_Layout->generateBlocks()
+#8 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Controller\Varien\Action.php(269): Mage_Core_Controller_Varien_Action->generateLayoutBlocks()
+#9 D:\Mage\htdocs\magento\alo_raymond\app\code\local\Magiccart\Blog\controllers\IndexController.php(21): Mage_Core_Controller_Varien_Action->loadLayout()
+#10 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Controller\Varien\Action.php(418): Magiccart_Blog_IndexController->listAction()
+#11 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Controller\Varien\Router\Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('list')
+#12 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Controller\Varien\Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#13 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Model\App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#14 D:\Mage\htdocs\magento\alo_raymond\app\Mage.php(684): Mage_Core_Model_App->run(Array)
+#15 D:\Mage\htdocs\magento\alo_raymond\index.php(83): Mage::run('', 'store')
+#16 {main}
+2016-05-17T13:05:34+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'Invalid block type: Magiccart_Blog_Block_Html_Pager' in D:\Mage\htdocs\magento\alo_raymond\app\Mage.php:595
+Stack trace:
+#0 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Model\Layout.php(495): Mage::throwException('Invalid block t...')
+#1 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Model\Layout.php(437): Mage_Core_Model_Layout->_getBlockInstance('blog/html_pager', Array)
+#2 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Model\Layout.php(472): Mage_Core_Model_Layout->createBlock('blog/html_pager', 'product_list_to...')
+#3 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Model\Layout.php(239): Mage_Core_Model_Layout->addBlock('blog/html_pager', 'product_list_to...')
+#4 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Model\Layout.php(205): Mage_Core_Model_Layout->_generateBlock(Object(Mage_Core_Model_Layout_Element), Object(Mage_Core_Model_Layout_Element))
+#5 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Model\Layout.php(206): Mage_Core_Model_Layout->generateBlocks(Object(Mage_Core_Model_Layout_Element))
+#6 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Model\Layout.php(206): Mage_Core_Model_Layout->generateBlocks(Object(Mage_Core_Model_Layout_Element))
+#7 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Model\Layout.php(210): Mage_Core_Model_Layout->generateBlocks(Object(Mage_Core_Model_Layout_Element))
+#8 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Controller\Varien\Action.php(344): Mage_Core_Model_Layout->generateBlocks()
+#9 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Controller\Varien\Action.php(269): Mage_Core_Controller_Varien_Action->generateLayoutBlocks()
+#10 D:\Mage\htdocs\magento\alo_raymond\app\code\local\Magiccart\Blog\controllers\IndexController.php(21): Mage_Core_Controller_Varien_Action->loadLayout()
+#11 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Controller\Varien\Action.php(418): Magiccart_Blog_IndexController->listAction()
+#12 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Controller\Varien\Router\Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('list')
+#13 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Controller\Varien\Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#14 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Model\App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#15 D:\Mage\htdocs\magento\alo_raymond\app\Mage.php(684): Mage_Core_Model_App->run(Array)
+#16 D:\Mage\htdocs\magento\alo_raymond\index.php(83): Mage::run('', 'store')
+#17 {main}
+2016-05-17T13:10:00+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'Invalid block type: Magiccart_Blog_Block_Toolbar_Toolbar' in D:\Mage\htdocs\magento\alo_raymond\app\Mage.php:595
+Stack trace:
+#0 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Model\Layout.php(495): Mage::throwException('Invalid block t...')
+#1 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Model\Layout.php(437): Mage_Core_Model_Layout->_getBlockInstance('blog/toolbar_to...', Array)
+#2 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Model\Layout.php(472): Mage_Core_Model_Layout->createBlock('blog/toolbar_to...', 'blog_list_toolb...')
+#3 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Model\Layout.php(239): Mage_Core_Model_Layout->addBlock('blog/toolbar_to...', 'blog_list_toolb...')
+#4 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Model\Layout.php(205): Mage_Core_Model_Layout->_generateBlock(Object(Mage_Core_Model_Layout_Element), Object(Mage_Core_Model_Layout_Element))
+#5 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Model\Layout.php(206): Mage_Core_Model_Layout->generateBlocks(Object(Mage_Core_Model_Layout_Element))
+#6 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Model\Layout.php(210): Mage_Core_Model_Layout->generateBlocks(Object(Mage_Core_Model_Layout_Element))
+#7 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Controller\Varien\Action.php(344): Mage_Core_Model_Layout->generateBlocks()
+#8 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Controller\Varien\Action.php(269): Mage_Core_Controller_Varien_Action->generateLayoutBlocks()
+#9 D:\Mage\htdocs\magento\alo_raymond\app\code\local\Magiccart\Blog\controllers\IndexController.php(21): Mage_Core_Controller_Varien_Action->loadLayout()
+#10 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Controller\Varien\Action.php(418): Magiccart_Blog_IndexController->listAction()
+#11 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Controller\Varien\Router\Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('list')
+#12 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Controller\Varien\Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#13 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Model\App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#14 D:\Mage\htdocs\magento\alo_raymond\app\Mage.php(684): Mage_Core_Model_App->run(Array)
+#15 D:\Mage\htdocs\magento\alo_raymond\index.php(83): Mage::run('', 'store')
+#16 {main}
+2016-05-17T13:10:00+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'Invalid block type: Magiccart_Blog_Block_Html_Pager' in D:\Mage\htdocs\magento\alo_raymond\app\Mage.php:595
+Stack trace:
+#0 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Model\Layout.php(495): Mage::throwException('Invalid block t...')
+#1 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Model\Layout.php(437): Mage_Core_Model_Layout->_getBlockInstance('blog/html_pager', Array)
+#2 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Model\Layout.php(472): Mage_Core_Model_Layout->createBlock('blog/html_pager', 'product_list_to...')
+#3 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Model\Layout.php(239): Mage_Core_Model_Layout->addBlock('blog/html_pager', 'product_list_to...')
+#4 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Model\Layout.php(205): Mage_Core_Model_Layout->_generateBlock(Object(Mage_Core_Model_Layout_Element), Object(Mage_Core_Model_Layout_Element))
+#5 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Model\Layout.php(206): Mage_Core_Model_Layout->generateBlocks(Object(Mage_Core_Model_Layout_Element))
+#6 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Model\Layout.php(206): Mage_Core_Model_Layout->generateBlocks(Object(Mage_Core_Model_Layout_Element))
+#7 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Model\Layout.php(210): Mage_Core_Model_Layout->generateBlocks(Object(Mage_Core_Model_Layout_Element))
+#8 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Controller\Varien\Action.php(344): Mage_Core_Model_Layout->generateBlocks()
+#9 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Controller\Varien\Action.php(269): Mage_Core_Controller_Varien_Action->generateLayoutBlocks()
+#10 D:\Mage\htdocs\magento\alo_raymond\app\code\local\Magiccart\Blog\controllers\IndexController.php(21): Mage_Core_Controller_Varien_Action->loadLayout()
+#11 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Controller\Varien\Action.php(418): Magiccart_Blog_IndexController->listAction()
+#12 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Controller\Varien\Router\Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('list')
+#13 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Controller\Varien\Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#14 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Model\App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#15 D:\Mage\htdocs\magento\alo_raymond\app\Mage.php(684): Mage_Core_Model_App->run(Array)
+#16 D:\Mage\htdocs\magento\alo_raymond\index.php(83): Mage::run('', 'store')
+#17 {main}
+2016-05-17T13:11:44+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'Invalid block type: Magiccart_Blog_Block_Toolbar_Toolbar' in D:\Mage\htdocs\magento\alo_raymond\app\Mage.php:595
+Stack trace:
+#0 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Model\Layout.php(495): Mage::throwException('Invalid block t...')
+#1 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Model\Layout.php(437): Mage_Core_Model_Layout->_getBlockInstance('blog/toolbar_to...', Array)
+#2 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Model\Layout.php(472): Mage_Core_Model_Layout->createBlock('blog/toolbar_to...', 'blog_list_toolb...')
+#3 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Model\Layout.php(239): Mage_Core_Model_Layout->addBlock('blog/toolbar_to...', 'blog_list_toolb...')
+#4 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Model\Layout.php(205): Mage_Core_Model_Layout->_generateBlock(Object(Mage_Core_Model_Layout_Element), Object(Mage_Core_Model_Layout_Element))
+#5 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Model\Layout.php(206): Mage_Core_Model_Layout->generateBlocks(Object(Mage_Core_Model_Layout_Element))
+#6 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Model\Layout.php(210): Mage_Core_Model_Layout->generateBlocks(Object(Mage_Core_Model_Layout_Element))
+#7 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Controller\Varien\Action.php(344): Mage_Core_Model_Layout->generateBlocks()
+#8 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Controller\Varien\Action.php(269): Mage_Core_Controller_Varien_Action->generateLayoutBlocks()
+#9 D:\Mage\htdocs\magento\alo_raymond\app\code\local\Magiccart\Blog\controllers\IndexController.php(21): Mage_Core_Controller_Varien_Action->loadLayout()
+#10 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Controller\Varien\Action.php(418): Magiccart_Blog_IndexController->listAction()
+#11 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Controller\Varien\Router\Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('list')
+#12 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Controller\Varien\Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#13 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Model\App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#14 D:\Mage\htdocs\magento\alo_raymond\app\Mage.php(684): Mage_Core_Model_App->run(Array)
+#15 D:\Mage\htdocs\magento\alo_raymond\index.php(83): Mage::run('', 'store')
+#16 {main}
+2016-05-17T13:11:44+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'Invalid block type: Magiccart_Blog_Block_Html_Pager' in D:\Mage\htdocs\magento\alo_raymond\app\Mage.php:595
+Stack trace:
+#0 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Model\Layout.php(495): Mage::throwException('Invalid block t...')
+#1 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Model\Layout.php(437): Mage_Core_Model_Layout->_getBlockInstance('blog/html_pager', Array)
+#2 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Model\Layout.php(472): Mage_Core_Model_Layout->createBlock('blog/html_pager', 'product_list_to...')
+#3 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Model\Layout.php(239): Mage_Core_Model_Layout->addBlock('blog/html_pager', 'product_list_to...')
+#4 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Model\Layout.php(205): Mage_Core_Model_Layout->_generateBlock(Object(Mage_Core_Model_Layout_Element), Object(Mage_Core_Model_Layout_Element))
+#5 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Model\Layout.php(206): Mage_Core_Model_Layout->generateBlocks(Object(Mage_Core_Model_Layout_Element))
+#6 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Model\Layout.php(206): Mage_Core_Model_Layout->generateBlocks(Object(Mage_Core_Model_Layout_Element))
+#7 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Model\Layout.php(210): Mage_Core_Model_Layout->generateBlocks(Object(Mage_Core_Model_Layout_Element))
+#8 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Controller\Varien\Action.php(344): Mage_Core_Model_Layout->generateBlocks()
+#9 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Controller\Varien\Action.php(269): Mage_Core_Controller_Varien_Action->generateLayoutBlocks()
+#10 D:\Mage\htdocs\magento\alo_raymond\app\code\local\Magiccart\Blog\controllers\IndexController.php(21): Mage_Core_Controller_Varien_Action->loadLayout()
+#11 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Controller\Varien\Action.php(418): Magiccart_Blog_IndexController->listAction()
+#12 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Controller\Varien\Router\Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('list')
+#13 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Controller\Varien\Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#14 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Model\App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#15 D:\Mage\htdocs\magento\alo_raymond\app\Mage.php(684): Mage_Core_Model_App->run(Array)
+#16 D:\Mage\htdocs\magento\alo_raymond\index.php(83): Mage::run('', 'store')
+#17 {main}
+2016-05-18T16:27:36+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'Invalid block type: Magiccart_Blog_Block_Toolbar_Toolbar' in D:\Mage\htdocs\magento\alo_raymond\app\Mage.php:595
+Stack trace:
+#0 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Model\Layout.php(495): Mage::throwException('Invalid block t...')
+#1 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Model\Layout.php(437): Mage_Core_Model_Layout->_getBlockInstance('blog/toolbar_to...', Array)
+#2 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Model\Layout.php(472): Mage_Core_Model_Layout->createBlock('blog/toolbar_to...', 'blog_list_toolb...')
+#3 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Model\Layout.php(239): Mage_Core_Model_Layout->addBlock('blog/toolbar_to...', 'blog_list_toolb...')
+#4 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Model\Layout.php(205): Mage_Core_Model_Layout->_generateBlock(Object(Mage_Core_Model_Layout_Element), Object(Mage_Core_Model_Layout_Element))
+#5 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Model\Layout.php(206): Mage_Core_Model_Layout->generateBlocks(Object(Mage_Core_Model_Layout_Element))
+#6 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Model\Layout.php(210): Mage_Core_Model_Layout->generateBlocks(Object(Mage_Core_Model_Layout_Element))
+#7 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Controller\Varien\Action.php(344): Mage_Core_Model_Layout->generateBlocks()
+#8 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Controller\Varien\Action.php(269): Mage_Core_Controller_Varien_Action->generateLayoutBlocks()
+#9 D:\Mage\htdocs\magento\alo_raymond\app\code\local\Magiccart\Blog\controllers\IndexController.php(21): Mage_Core_Controller_Varien_Action->loadLayout()
+#10 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Controller\Varien\Action.php(418): Magiccart_Blog_IndexController->listAction()
+#11 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Controller\Varien\Router\Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('list')
+#12 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Controller\Varien\Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#13 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Model\App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#14 D:\Mage\htdocs\magento\alo_raymond\app\Mage.php(684): Mage_Core_Model_App->run(Array)
+#15 D:\Mage\htdocs\magento\alo_raymond\index.php(83): Mage::run('', 'store')
+#16 {main}
+2016-05-18T16:27:36+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'Invalid block type: Magiccart_Blog_Block_Html_Pager' in D:\Mage\htdocs\magento\alo_raymond\app\Mage.php:595
+Stack trace:
+#0 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Model\Layout.php(495): Mage::throwException('Invalid block t...')
+#1 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Model\Layout.php(437): Mage_Core_Model_Layout->_getBlockInstance('blog/html_pager', Array)
+#2 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Model\Layout.php(472): Mage_Core_Model_Layout->createBlock('blog/html_pager', 'product_list_to...')
+#3 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Model\Layout.php(239): Mage_Core_Model_Layout->addBlock('blog/html_pager', 'product_list_to...')
+#4 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Model\Layout.php(205): Mage_Core_Model_Layout->_generateBlock(Object(Mage_Core_Model_Layout_Element), Object(Mage_Core_Model_Layout_Element))
+#5 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Model\Layout.php(206): Mage_Core_Model_Layout->generateBlocks(Object(Mage_Core_Model_Layout_Element))
+#6 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Model\Layout.php(206): Mage_Core_Model_Layout->generateBlocks(Object(Mage_Core_Model_Layout_Element))
+#7 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Model\Layout.php(210): Mage_Core_Model_Layout->generateBlocks(Object(Mage_Core_Model_Layout_Element))
+#8 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Controller\Varien\Action.php(344): Mage_Core_Model_Layout->generateBlocks()
+#9 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Controller\Varien\Action.php(269): Mage_Core_Controller_Varien_Action->generateLayoutBlocks()
+#10 D:\Mage\htdocs\magento\alo_raymond\app\code\local\Magiccart\Blog\controllers\IndexController.php(21): Mage_Core_Controller_Varien_Action->loadLayout()
+#11 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Controller\Varien\Action.php(418): Magiccart_Blog_IndexController->listAction()
+#12 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Controller\Varien\Router\Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('list')
+#13 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Controller\Varien\Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#14 D:\Mage\htdocs\magento\alo_raymond\app\code\core\Mage\Core\Model\App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#15 D:\Mage\htdocs\magento\alo_raymond\app\Mage.php(684): Mage_Core_Model_App->run(Array)
+#16 D:\Mage\htdocs\magento\alo_raymond\index.php(83): Mage::run('', 'store')
+#17 {main}
+2018-08-08T11:29:49+00:00 DEBUG (7): Exception message: package with this name does not exist and cannot be set.
+Trace: #0 D:\Projects\magento_uma\app\code\core\Mage\Core\Model\Abstract.php(316): Mage_Adminhtml_Model_System_Config_Backend_Design_Package->_beforeSave()
+#1 D:\Projects\magento_uma\app\code\core\Mage\Core\Model\Resource\Transaction.php(151): Mage_Core_Model_Abstract->save()
+#2 D:\Projects\magento_uma\app\code\core\Mage\Adminhtml\Model\Config\Data.php(206): Mage_Core_Model_Resource_Transaction->save()
+#3 D:\Projects\magento_uma\app\code\core\Mage\Adminhtml\controllers\System\ConfigController.php(165): Mage_Adminhtml_Model_Config_Data->save()
+#4 D:\Projects\magento_uma\app\code\core\Mage\Core\Controller\Varien\Action.php(418): Mage_Adminhtml_System_ConfigController->saveAction()
+#5 D:\Projects\magento_uma\app\code\core\Mage\Core\Controller\Varien\Router\Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('save')
+#6 D:\Projects\magento_uma\app\code\core\Mage\Core\Controller\Varien\Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#7 D:\Projects\magento_uma\app\code\core\Mage\Core\Model\App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#8 D:\Projects\magento_uma\app\Mage.php(684): Mage_Core_Model_App->run(Array)
+#9 D:\Projects\magento_uma\index.php(83): Mage::run('', 'store')
+#10 {main}

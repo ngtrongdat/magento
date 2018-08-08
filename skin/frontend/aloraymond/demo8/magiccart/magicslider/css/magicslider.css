@@ -1,0 +1,145 @@
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700,700italic,900,900italic);
+
+
+.magicslider{padding:0px;margin:0;}
+.magicslider .bx-wrapper{margin: 0; padding: 0}
+.bx-wrapper .bx-caption {display:none;}
+.magicslider .bx-wrapper .bx-pager.bx-default-pager a {background-color: #fff;border-color: #ffffff;}
+.magicslider .bx-wrapper .bx-pager.bx-default-pager a:hover, .magicslider .bx-wrapper .bx-pager.bx-default-pager a.active {background-color: rgba(0, 0, 0, 0);border-color: #ffffff;}
+.bx-wrapper .bx-caption.start, .bx-wrapper .bx-caption.play {bottom: 0;display: block;left: 0;position: absolute; right: 0;top: 0;}
+.magicslider .bx-wrapper .item a{position: relative;z-index: 1;}
+.text-slide {position: absolute; opacity: 0; display: none; visibility: hidden;}
+.play .text-slide { display:block;opacity: 1; visibility: visible;}
+/*Text slide*/
+.bx-caption .text-slide .caption1 span{font-size: 36px; color: #2a2a2a; font-weight: bold; text-transform: uppercase; line-height: 52px; display: block;}
+
+.bx-caption .text-slide .caption2{font-size: 16px; color: #7f7f7f; font-weight: normal; text-align: center; line-height: 25px; margin-top: 30px}
+
+.bx-caption .text-slide .caption1 span.first{text-align: left;}
+.bx-caption .text-slide .caption1 span.last{text-align: right;}
+
+/*Text slide 1*/
+.bx-caption .text-slide1{top: calc(50% - 145px); text-align: center; width: 100%}
+.bx-caption .text-slide1 .caption1{width: 63%; margin: 0 auto}
+.bx-caption .text-slide1 .caption1 span{color: #fff}
+.bx-caption .text-slide1 .caption2{color: #fff; width: 70%; margin: 0 auto; margin-top: 25px}
+/*.text-slide1 .slide-action .btn-shop{border-color: #fff; color: #fff; background-color: transparent;}*/
+
+.bx-caption .text-slide1 .slide-action{margin-top: 55px; width: 55%; text-align: center; display: inline-block;}
+
+/*Text slide 2*/
+.bx-caption .text-slide2{width: 70%; left: 15%; text-align: center; top: calc(50% - 125px)}
+.bx-caption .text-slide2 .caption1{margin: 0 50px}
+.bx-caption .text-slide2 .caption1 span{color: #fff; font-size: 33px; line-height: 47px;}
+.bx-caption .text-slide2 .caption2{color: #fff; margin-top: 20px}
+/*.bx-caption .text-slide2 .slide-action .btn-shop{color: #fff; border-color: #fff}*/
+
+/*Text slide 3*/
+.bx-caption .text-slide3{text-align: center; width: 64%; right: 40px; top: calc(50% - 100px)}
+.bx-caption .text-slide.text-slide3 .caption1 span{color: #333333; }
+.text-slide3 .slide-action .btn-shop{color: #2a2a2a; border-color: #363636}
+
+/*Text slide 4*/
+.text-slide4{left: 40px; width: 56%; text-align: center; top: calc(50% - 97px)}
+.bx-caption .text-slide4 .caption1 span{font-size: 33px; color: #333333; line-height: 50px}
+
+
+.slide-action .btn-shop {border-width: 1px;border-style: solid;border-color: #373737;display: inline-block;font-size: 13px;font-weight: normal; color: #2a2a2a; line-height: 38px;padding: 0 30px; text-transform: uppercase;}
+.slide-action .btn-shop.shop {margin-right: 20px}
+.slide-action .btn-shop:hover{background-color: #373737; color: #fff; border-color: #373737}
+.slide-action{margin-top: 55px; }
+
+/*direction*/
+.main-slide .bx-wrapper .bx-controls-direction a{width: 40px; height: 80px; line-height: 80px; text-align: center; border: 0; border-radius: 0; background-color: transparent; top: calc(50% - 40px); margin: 0; overflow: hidden; transform: rotate(0);}
+.main-slide .bx-wrapper .bx-controls-direction a .fa{transform: rotate(0);}
+.main-slide .bx-wrapper .bx-controls-direction a:after{content: ""; position: absolute; border-width: 40px; border-style: solid; z-index: -1; border-color: transparent; }
+.main-slide .bx-wrapper .bx-controls-direction a.bx-next{right: 0}
+.main-slide .bx-wrapper .bx-controls-direction a.bx-prev{left: 0}
+.main-slide .bx-wrapper .bx-controls-direction a.bx-prev .fa{padding-right: 15px}
+.main-slide .bx-wrapper .bx-controls-direction a.bx-next .fa{padding-left: 15px;}
+.main-slide .bx-wrapper .bx-controls-direction a.bx-next:after{border-right-color: #fff; right: 0}
+.main-slide .bx-wrapper .bx-controls-direction a.bx-next:hover:after{border-right-color: #2a2a2a; }
+.main-slide .bx-wrapper .bx-controls-direction a.bx-prev:after{border-left-color: #fff; left: 0}
+.main-slide .bx-wrapper .bx-controls-direction a.bx-prev:hover:after{border-left-color: #2a2a2a;}
+
+
+
+/* Slide:Custom font */
+
+/*Custom Font*/
+.bx-caption .text-slide .caption1 span{font-family: 'Playfair Display',sans-serif;}
+
+
+/*animazing slide*/
+.bx-caption.play .text-slide2:before{animation-name: alothemes;
+    animation-duration: 2s;}
+@keyframes alothemes{
+    from{transform: scale(0); opacity: 0; visibility: hidden;}
+    to{transform: scale(1); opacity: 1; visibility: visible;}
+}
+.play .text-slide3 .caption1, .play .text-slide3 .caption2, .play .text-slide3 .caption3, .play .text-slide3 .btn-shop {animation-name: zoomOut;}
+.play .btn-shop {
+    -moz-animation: fadeInUp 0.8s ease-in 1.9s backwards;
+    -webkit-animation: fadeInUp 0.8s ease-in 1.9s backwards;
+    animation: fadeInUp 0.8s ease-in 1.9s backwards; 
+}
+/*.play .text-slide2 .caption1, .play .text-slide2 .caption3, .play .text-slide2 .btn-shop {animation-name: zoomIn;}
+.play .text-slide2 .caption2{animation-name: zoomOut;}*/
+
+
+.play .caption1{
+    -moz-animation: fadeInRight 0.8s ease-in 1.3s backwards;
+    -webkit-animation: fadeInRight 0.8s ease-in 1s backwards;
+    animation: fadeInRight 0.8s ease-in 1s backwards;
+}
+.play .caption2 {
+    -moz-animation: fadeInLeft 0.8s ease-in 1.5s backwards;
+    -webkit-animation: fadeInLeft 0.8s ease-in 1.5s backwards;
+    animation: fadeInLeft 0.8s ease-in 1.5s backwards;
+}
+.play .caption3{
+    -moz-animation: fadeInUp 0.8s ease-in 1.7s backwards;
+    -webkit-animation: fadeInUp 0.8s ease-in 1.7s backwards;
+    animation: fadeInUp 0.8s ease-in 1.7s backwards;
+}
+.play .caption4 {
+    -moz-animation: fadeInLeft 1s ease-in 2s backwards;
+    -webkit-animation: fadeInLeft 1sease-in 2s backwards;
+    animation: fadeInLeft 1 sease-in 2s backwards;
+}
+
+
+.play .text-slide2 .caption5{
+    -moz-animation: fadeInUp 0.8s ease-in 1.9s backwards;
+    -webkit-animation: fadeInUp 0.8s ease-in 1.9s backwards;
+    animation: fadeInUp 0.8s ease-in 1.9s backwards; opacity:1;
+}
+.play .caption6{
+    -moz-animation: fadeInUp 0.8s ease-in 1.9s backwards;
+    -webkit-animation: fadeInUp 0.8s ease-in 1.9s backwards;
+    animation: fadeInUp 0.8s ease-in 1.9s backwards; opacity:1;
+}
+
+@media only screen and (max-width: 640px) {
+    .bx-caption .text-slide{width: 90%; left: 5%; top: calc(50% - 100px)}
+    .bx-caption .text-slide .caption1 span{font-size: 25px; line-height: 35px}
+    .bx-caption .text-slide .caption2{font-size: 13px; line-height: 22px}
+    .bx-caption .slide-action{margin-top: 30px}
+    .bx-caption .text-slide2 .caption1{margin: 0 80px}
+    .bx-caption .text-slide4, .bx-caption .text-slide3{top: calc(50% - 70px); width: 60%}
+
+    .bx-caption .text-slide1 .caption2{width: auto}
+}
+@media only screen and (max-width: 480px) {
+    .bx-caption .text-slide .caption2{display: none;}
+    .bx-caption .text-slide1 .caption1{width: auto}
+    .bx-caption .text-slide1 .slide-action{width: auto; margin-top: 30px}
+    .bx-caption .text-slide2 .caption1{margin: 0}
+
+    .bx-caption .text-slide4, .bx-caption .text-slide3{width: 90%}
+}
+
+@media only screen and (max-width: 320px) {
+    .bx-caption .text-slide h3{display: none;}
+    .bx-caption .text-slide{top: calc(50% - 35px) !important}
+}
