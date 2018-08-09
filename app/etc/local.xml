@@ -40,10 +40,10 @@
             </db>
             <default_setup>
                 <connection>
-                    <host><![CDATA[localhost]]></host>
-                    <username><![CDATA[root]]></username>
-                    <password><![CDATA[]]></password>
-                    <dbname><![CDATA[alo_raymond]]></dbname>
+                    <host><![CDATA[45.252.248.20]]></host>
+                    <username><![CDATA[trienlam_user]]></username>
+                    <password><![CDATA[glix-hYI5]Jf]]></password>
+                    <dbname><![CDATA[trienlam_demo]]></dbname>
                     <initStatements><![CDATA[SET NAMES utf8]]></initStatements>
                     <model><![CDATA[mysql4]]></model>
                     <type><![CDATA[pdo_mysql]]></type>
